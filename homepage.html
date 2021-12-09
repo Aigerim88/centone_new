@@ -11,69 +11,104 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="main">
+        <header class="header">
             <div class="container">
-                <nav class="menu">            
-                    <a class="menu__logo" href="#"><img src="./media/logo.png" alt="Centonelogo"></a>
-                    <form>
-                        <input class="menu__search" type="text" placeholder="&nbsp;&nbsp; SEARCH">
-                    </form>
-                    <div class="menu__login">
-                        <a class="menu__login item point1" href="#">Membership</a>
-                        <a class="menu__login item point2" href="#">My Favorites</a>
-                        <a class="menu__login item point3" href="#">Store Locator</a>
-                        <a class="menu__login item point4" href="#">My Cart</a>
-                    </div>
-                    <div class="line"></div>
-                    <div class="menu__products">
-                        <a class="menu__products element" href="#">November Deals</a>
-                        <a class="menu__products element" href="#">UKI Collection</a>
-                        <a class="menu__products element" href="#">New Season</a>
-                        <a class="menu__products element" href="#">All products</a>
-                        <a class="menu__products element" href="#">Opportunity products</a>
-                        <a class="menu__products element" href="#">Accessory</a>
+                <div class="header__nav">
+                    <a href="#"><img class="logo" src="media/logo.png" alt=""></a>
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+            
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Membership</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Favourites</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Store Locator</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <nav class="main-nav">
+                    <div class="main-nav__list">
+                        <span class="main-nav__item">
+                            <a href="#" class="main-nav__link">November Deals</a>
+                        </span>
+                        <span class="main-nav__item">
+                            <a href="#" class="main-nav__link">UKI Collection</a>
+                        </span>
+                        <span class="main-nav__item">
+                            <a href="#" class="main-nav__link">New season</a>
+                        </span>
+                        <span class="main-nav__item">
+                            <a href="#" class="main-nav__link">All products</a>
+                        </span>
+                        <span class="main-nav__item">
+                            <a href="#" class="main-nav__link">Opportunity products</a>
+                        </span>
+                        <span class="main-nav__item">
+                            <a href="#" class="main-nav__link">Accessories</a>
+                        </span>
                     </div>
                 </nav>
-            </div>
-            <!-- Carousel -->
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                         
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./media/banner-slider/3.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./media/banner-slider/2.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./media/banner-slider/1.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./media/banner-slider/4.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./media/banner-slider/5.jpg" alt="" class="d-block w-100">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-            
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./media/banner-slider/3.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./media/banner-slider/2.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./media/banner-slider/1.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./media/banner-slider/4.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./media/banner-slider/5.jpg" alt="" class="d-block w-100">
-                    </div>
-                </div>
-            
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
+        </header class="header">
+
+        <div class="main">
             <div class="container">    
                 <div class="features">            
                     <a href="#" class="features__item1">For your purchases of 150 TL or more <br><b>FREE SHIPPING</b></a>
